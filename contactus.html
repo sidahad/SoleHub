@@ -401,9 +401,9 @@
         //  Step 4: Click "Account" (top right) → copy your Public Key
         //  Step 5: Paste the 3 values below and you're done!
         // ============================================================
-        const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // e.g. "aBcDeFgHiJkLmNoPq"
-        const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_xxxxxxx"
-        const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xxxxxxx"
+        const EMAILJS_PUBLIC_KEY  = "R0tSLit1FR6PmulhC";
+        const EMAILJS_SERVICE_ID  = "service_dnvj57o";
+        const EMAILJS_TEMPLATE_ID = "template_wqbipst";
         // ============================================================
 
         const contactForm     = document.getElementById("contactUsForm");
@@ -453,10 +453,14 @@
                 formStatus.style.display = "none";
 
                 const templateParams = {
+                    name      : name,
                     from_name : name,
+                    email     : email,
                     from_email: email,
                     phone     : phone,
                     message   : message,
+                    title     : 'SoleHub Website Inquiry',
+                    time      : new Date().toLocaleString(),
                     to_email  : 'ahadkind32415@gmail.com'
                 };
 
