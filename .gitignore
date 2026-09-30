@@ -26,3 +26,30 @@ node_modules/
 *.sw?
 .DS_Store
 Thumbs.db
+
+# Old project folders (should NOT be on GitHub)
+EXAMP8/
+EXAMP8
+EXAMP9/
+EXAMP9
+
+# Personal CV / sensitive files
+Muhammad_Ahad_CV.pdf
+
+# Test / dev files
+students.json
+sandbox.confict.json
+json-server*/
+json-server command.txt
+add to cart.html
+add to cart2.html
+another slider.html
+edit.html
+fetch.html
+handmadeslider.html
+handmadeslider.css
+header2.html
+contactform.html
+script.js
+swiper.js
+swiper.css
