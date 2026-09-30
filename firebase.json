@@ -10,6 +10,17 @@
       "Muhammad_Ahad_CV.pdf",
       "*.json",
       "*.txt"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(html|htm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
     ]
   }
 }

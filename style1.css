@@ -355,6 +355,10 @@
   .login-text{
     margin-right: 0px;
     margin-left: 0px;
+    white-space: nowrap !important;
+  }
+  .login-text .nav-link1 {
+    white-space: nowrap !important;
   }
 }
 
