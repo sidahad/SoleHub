@@ -4,7 +4,12 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "EXAMP8/**",
+      "EXAMP9/**",
+      "Muhammad_Ahad_CV.pdf",
+      "*.json",
+      "*.txt"
     ]
   }
 }
