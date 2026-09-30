@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SoleHub</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="contactus.css">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:700,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <!-- uikit -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <!-- rev slider -->
+    <link rel="stylesheet" href="css/rev-slider/settings.css" />
+    <!-- lightslider -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- Loader CSS -->
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c28f852b63.js" crossorigin="anonymous"></script>
+    <style>
+        .banner-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            width: 100%;
+        }
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 420px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader"><img src="./assets/img/preloader.png" alt="Loading..." class="preloader__img" /></div>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo4.png" alt="SoleHub Logo" class="logo" style="max-height: 50px; width: auto;">
+                <h3 style="color: #fff; margin-left: 8px; margin-bottom: 0; font-size: 1.9rem; font-weight: 700;">SoleHub</h3>
+            </a>
+            <button class="navbar-toggler" style="background-color:#fff; margin-right: 15px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ani">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown2 dropdown">
+                        <a class="nav-link1 responsive-bttn1 dropdown-toggle" href="#">Pages</a>
+                        <ul class="ani dropdown1">
+                            <li class="nav-link3"><a href="#" class="nav-link5">1.</a><a class="nav-link2" href="AboutUs.html">About Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">2.</a><a class="nav-link2" href="contactus.html">Contact Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">3.</a><a class="nav-link2" href="checkout.html">CheckOut</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">4.</a><a class="nav-link2" href="mainproduct1.html">Product Detail</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">5.</a><a class="nav-link2" href="accordian.html">Accordian</a></li>
+                        </ul>
+                    </li>
+                    <p class="d-lg-none my-2">
+                        <a class="nav-link1 responsive-bttn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                            Pages <i class="fas fa-chevron-down ms-1"></i>
+                        </a>
+                    </p>
+                    <div class="collapse d-lg-none" id="collapseExample">
+                        <div class="card card-body" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+                            <ul class="list-unstyled mb-0">
+                                <li class="nav-link3 py-1"><a class="nav-link4" href="AboutUs.html">About Us</a></li>
+                                <li class="nav-link3 py-1"><a class="nav-link4" href="contactus.html">Contact Us</a></li>
+                                <li class="nav-link3 py-1"><a class="nav-link4" href="checkout.html">CheckOut</a></li>
+                                <li class="nav-link3 py-1"><a class="nav-link4" href="mainproduct1.html">Product Detail</a></li>
+                                <li class="nav-link3 py-1"><a class="nav-link4" href="accordian.html">Accordian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link1" href="sale.html">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ani ms-auto login-text align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login / Signup</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link1 cart-icon" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content background-1" style="background: rgba(10, 15, 45, 0.95); color: #fff; border: 1px solid rgba(255,255,255,0.15); border-radius: 16px;">
+                <div class="modal-body p-4">
+                    <div class="text-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h3 class="text-center mb-4 text-white">Login to SoleHub</h3>
+                    <form id="loginForm" action="#" onsubmit="event.preventDefault(); alert('Login successful!');">
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="email" id="loginEmail" required placeholder="Enter your email">
+                            <label class="loginlabel" for="loginEmail">Email</label>
+                        </div>
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="password" id="loginPassword" required minlength="8" placeholder="Enter password">
+                            <label class="loginlabel" for="loginPassword">Password</label>
+                        </div>
+                        <div class="remember-forgot d-flex justify-content-between my-3">
+                            <label class="loginlabel text-white m-0"><input type="checkbox" class="me-2"> Remember</label>
+                            <a href="#" class="logina text-info">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="button1 w-100 py-2">Login</button>
+                        <div class="register-link text-center mt-3">
+                            <p class="text-white-50">Don't have an account? <a class="text-info text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#signup">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content background-1" style="background: rgba(10, 15, 45, 0.95); color: #fff; border: 1px solid rgba(255,255,255,0.15); border-radius: 16px;">
+                <div class="modal-body p-4">
+                    <div class="text-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h3 class="text-center mb-4 text-white">Create an Account</h3>
+                    <form id="signupForm" action="#" onsubmit="event.preventDefault(); alert('Registration successful!');">
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="text" id="fullName" required placeholder="Full name">
+                            <label class="loginlabel" for="fullName">Full Name</label>
+                        </div>
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="email" id="signupEmail" required placeholder="Email address">
+                            <label class="loginlabel" for="signupEmail">Email</label>
+                        </div>
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="tel" id="phoneNumber" required pattern="^03[0-9]{9}" placeholder="03XXXXXXXXX">
+                            <label class="loginlabel" for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="input-box mb-3">
+                            <input class="logininput form-control text-white bg-transparent" type="password" id="password" required minlength="8" placeholder="Password (min 8 chars)">
+                            <label class="loginlabel" for="password">Password</label>
+                        </div>
+                        <button type="submit" class="button1 w-100 py-2 mt-2">Sign up</button>
+                        <div class="register-link text-center mt-3">
+                            <p class="text-white-50">Already have an account? <a class="text-info text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</a></p>
+                        </div>
+                    </form>          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Slider Banner -->
+    <div class="main_slider_area" style="margin-top: 85px;">
+        <div class="main_slider" id="slider_rev">
+            <div class="fullwidthbanner-container">
+                <div class="fullwidth_home_banner">
+                    <ul>
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                            <img src="img/rev-slider/slider-three2.jpg" alt="Contact Us Banner">
+                            <div class="tp-caption large_black sfr banner-title" data-x="center" data-y="center" data-speed="1200" data-start="800" data-easing="easeInOutBack">
+                                <strong>Contact Us</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Contact Information Cards (Muhammad Ahad CV Details) -->
+        <section class="contact-info-section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-info-grid">
+                <div class="contact-info-item">
+                    <i class="fas fa-user-tie info-icon"></i>
+                    <h4>Muhammad Ahad</h4>
+                    <p>Web Developer | IT Professional</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/ahadprocoder" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sidahad" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <h4>Our Location</h4>
+                    <p>House No. 127, Sector 11-K,<br>North Karachi, Pakistan</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope info-icon"></i>
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:ahadkind32415@gmail.com">ahadkind32415@gmail.com</a></p>
+                    <p style="font-size: 12px; color: #9ca3af; margin-top: 4px;">Direct inbox delivery</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt info-icon"></i>
+                    <h4>Call / WhatsApp</h4>
+                    <p><a href="tel:+923260577907">0326-0577-907</a></p>
+                    <p style="font-size: 12px; color: #9ca3af; margin-top: 4px;">Mon - Sat, 9am - 8pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="form-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="color: #cbd5e1; margin-bottom: 20px;">Send a message directly to Muhammad Ahad. All submissions are delivered immediately to <strong>ahadkind32415@gmail.com</strong>.</p>
+            
+            <form class="contact-form" id="contactUsForm" onsubmit="return false;">
+
+                <div class="row g-3">
+                    <div class="col-md-6 form-group">
+                        <label for="name"><i class="fas fa-user me-1 text-info"></i> Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="email"><i class="fas fa-envelope me-1 text-info"></i> Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="phone"><i class="fas fa-phone me-1 text-info"></i> Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="e.g. 0326-0577907">
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="message"><i class="fas fa-comment-dots me-1 text-info"></i> Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message or inquiry here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3 mt-3">
+                    <button class="contact-button" type="submit" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span id="btnText">Send Message</span>
+                    </button>
+                    <span id="statusIndicator" style="display:none; color: #0ef; font-size: 14px;">
+                        <i class="fas fa-spinner fa-spin me-1"></i> Delivering to ahadkind32415@gmail.com...
+                    </span>
+                </div>
+
+                <!-- Interactive Alert Box -->
+                <div id="formStatus" style="display:none;"></div>
+            </form>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="map-section">
+            <h2 class="section-title">Find Us On Google Maps</h2>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4135971083974!2d67.06085737355006!3d24.986058360472818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e303bc8bd1%3A0x83ed902b169e9c79!2sAl%20Ghafoor%20Regency%20Apartments%20North%20Karachi!5e0!3m2!1sen!2s!4v1710310443837!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer">
+            <footer class="py-5" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 15px;">Categories</h4>
+                            <ul class="footer flex-column list-unstyled">
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">New Arrivals</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">Men</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">Women</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">Kids</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">Special Offers</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 15px;">Quick Links</h4>
+                            <ul class="footer flex-column list-unstyled">
+                                <li class="footer-item mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                                <li class="footer-item mb-2"><a href="AboutUs.html" class="footer-link">About Us</a></li>
+                                <li class="footer-item mb-2"><a href="contactus.html" class="footer-link">Contact Us</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link">Shop</a></li>
+                                <li class="footer-item mb-2"><a href="checkout.html" class="footer-link">CheckOut</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 15px;">Account</h4>
+                            <ul class="footer flex-column list-unstyled">
+                                <li class="footer-item mb-2"><a href="mainproduct1.html" class="footer-link">Shoes Detail</a></li>
+                                <li class="footer-item mb-2"><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a></li>
+                                <li class="footer-item mb-2"><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#signup">Signup</a></li>
+                                <li class="footer-item mb-2"><a href="accordian.html" class="footer-link">FAQ & Policies</a></li>
+                                <li class="footer-item mb-2"><a href="cart.html" class="footer-link">View Cart</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-12 col-md-5 offset-md-1">
+                            <form action="https://formsubmit.co/ahadkind32415@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="New Newsletter Subscriber from SoleHub">
+                                <input type="hidden" name="_captcha" value="false">
+                                <h5 class="text-white">Subscribe to our newsletter</h5>
+                                <p class="text-white-50">Monthly digest of what's new and exciting from SoleHub.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <input style="border-radius: 5px; background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 10px 14px;" id="newsletter1" type="email" class="email w-100" name="email" required placeholder="Enter your email address">
+                                    <button class="btn" type="submit" style="border: 1px solid #0ef; background-color: #0ef; color: #000; font-weight: 600;">Subscribe</button>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row justify-content-between py-3 my-3 border-top border-secondary">
+                                    <p class="text-white-50 m-0">&copy; 2026 SoleHub. Developed by Muhammad Ahad.</p>
+                                    <ul class="list-unstyled d-flex mb-0 mt-2 mt-sm-0">
+                                        <li class="ms-3"><a class="link-body-emphasis" href="https://linkedin.com/in/ahadprocoder" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fs-4" style="color: #fff;"></i></a></li>
+                                        <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/sidahad" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fs-4" style="color: #fff;"></i></a></li>
+                                        <li class="ms-3"><a class="link-body-emphasis" href="mailto:ahadkind32415@gmail.com"><i class="fa-solid fa-envelope fs-4" style="color: #fff;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery library -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- Rev slider -->
+    <script src="js/rev-slider/rs-plugin/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rev-slider/rs-plugin/jquery.themepunch.revolution.js"></script>
+    <script src="js/rev-slider/rs.home.js"></script>
+    <!-- UIKit -->
+    <script src="js/uikit.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Lightslider -->
+    <script src="js/lightslider.js"></script> 
+    <!-- WOW Animation -->
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <!-- Loader JS -->
+    <script src="assets/js/loader.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+
+    <!-- EmailJS SDK - Permanent email delivery (never expires) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Contact Form Handler via EmailJS → ahadkind32415@gmail.com -->
+    <script>
+        // ============================================================
+        //  EMAILJS SETUP (One-time 2-minute setup on emailjs.com):
+        //  Step 1: Go to https://www.emailjs.com/ → Sign Up with Google
+        //  Step 2: Click "Email Services" → "Add New Service" → Gmail
+        //          → Connect your Gmail → Copy the Service ID shown
+        //  Step 3: Click "Email Templates" → "Create New Template"
+        //          Use these variables in template body:
+        //          From: {{from_name}} ({{from_email}})
+        //          Phone: {{phone}}
+        //          Message: {{message}}
+        //          → Save → Copy the Template ID shown
+        //  Step 4: Click "Account" (top right) → copy your Public Key
+        //  Step 5: Paste the 3 values below and you're done!
+        // ============================================================
+        const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // e.g. "aBcDeFgHiJkLmNoPq"
+        const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_xxxxxxx"
+        const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xxxxxxx"
+        // ============================================================
+
+        const contactForm     = document.getElementById("contactUsForm");
+        const submitBtn       = document.getElementById("submitBtn");
+        const btnText         = document.getElementById("btnText");
+        const statusIndicator = document.getElementById("statusIndicator");
+        const formStatus      = document.getElementById("formStatus");
+
+        // Initialize EmailJS
+        if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
+            emailjs.init(EMAILJS_PUBLIC_KEY);
+        }
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", async function(e) {
+                e.preventDefault();
+
+                const name    = document.getElementById("name").value.trim();
+                const email   = document.getElementById("email").value.trim();
+                const phone   = document.getElementById("phone").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (!name || !email || !phone || !message) {
+                    showStatus("Please fill in all required fields.", "error");
+                    return;
+                }
+
+                // Check if EmailJS is configured
+                if (EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
+                    // Fallback: open email client (works immediately before EmailJS setup)
+                    const subject = encodeURIComponent('SoleHub Inquiry from ' + name);
+                    const body = encodeURIComponent(
+                        'Name: ' + name + '\n' +
+                        'Email: ' + email + '\n' +
+                        'Phone: ' + phone + '\n\n' +
+                        'Message:\n' + message
+                    );
+                    window.location.href = 'mailto:ahadkind32415@gmail.com?subject=' + subject + '&body=' + body;
+                    showStatus('Your email client has opened. Please click Send in your email app to deliver your message to Muhammad Ahad.', 'success');
+                    return;
+                }
+
+                // EmailJS configured — send directly
+                submitBtn.disabled = true;
+                btnText.textContent = "Sending...";
+                statusIndicator.style.display = "inline-block";
+                formStatus.style.display = "none";
+
+                const templateParams = {
+                    from_name : name,
+                    from_email: email,
+                    phone     : phone,
+                    message   : message,
+                    to_email  : 'ahadkind32415@gmail.com'
+                };
+
+                try {
+                    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+                    showStatus(
+                        'Thank you, <strong>' + escapeHtml(name) + '</strong>! Your message has been sent directly to <strong>ahadkind32415@gmail.com</strong>. Muhammad Ahad will reply shortly.',
+                        'success'
+                    );
+                    contactForm.reset();
+                } catch (err) {
+                    console.error('EmailJS error:', err);
+                    showStatus('Failed to send message. Please email directly: <a href="mailto:ahadkind32415@gmail.com" style="color:#0ef">ahadkind32415@gmail.com</a>', 'error');
+                } finally {
+                    submitBtn.disabled = false;
+                    btnText.textContent = "Send Message";
+                    statusIndicator.style.display = "none";
+                }
+            });
+        }
+
+        function showStatus(htmlMsg, type) {
+            formStatus.className = type === 'success' ? 'alert alert-success mt-3' : 'alert alert-danger mt-3';
+            formStatus.style.display = 'block';
+            formStatus.innerHTML = htmlMsg;
+            formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+    </script>
+</body>
+</html>

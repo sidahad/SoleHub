@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accordian.css">
+     <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <link rel="stylesheet" href="style1.css">
+								   <!-- slider links -->
+    <!-- fonts -->
+	 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Karla:700,400' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	 <!-- uikit -->
+	 <link rel="stylesheet" href="css/uikit.min.css" />
+	
+	 <!-- rev slider -->
+	 <link rel="stylesheet" href="css/rev-slider/settings.css" />
+	 <!-- lightslider -->
+	 <link rel="stylesheet" href="css/lightslider.css">
+	 <!-- Theme -->
+	 <link rel="stylesheet" href="css/reset.css">
+	 <!-- custom css -->
+	 <link rel="stylesheet" href="style.css" /> 
+	 <!-- @@@@@@@@@@@@@ BOXICONS @@@@@@@@@@@@@ -->
+	 <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+	 <!-- @@@@@@@@@@@@@ CSS @@@@@@@@@@@@@ -->
+	 <link rel="stylesheet" href="assets/css/loader.css" />
+	
+									 <!-- slider links -->
+	                       <!-- footer -->
+	<script src="https://kit.fontawesome.com/c28f852b63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- @@@@@@@@@@@@@@@@@@@ preloader @@@@@@@@@@@@@@@@@@@@ -->
+      <div class="preloader" id="preloader"><img src="./assets/img/preloader.png" alt="" class="preloader__img" /></div>
+
+     
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" data-aos="slide-right" data-aos-delay="1000">
+                <img src="img/logo4.png" alt="" class="logo">
+                <h3 style="color: #fff; margin-left: 3px; margin-top: 3px; font-size: 2.17rem;">SoleHub</h3>
+            </a>
+            <button class="navbar-toggler" style="background-color:#fff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" data-aos="slide-up" data-aos-delay="1000" id="navbarNav">
+                <ul class="navbar-nav ani">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown2 dropdown">
+                        <a class="nav-link1 responsive-bttn1 dropdown-toggle" href="#">
+                            Pages
+                        </a>
+                        <ul class="ani dropdown1">
+                            <li class="nav-link3"><a href="#" class="nav-link5">1.</a><a class="nav-link2" href="AboutUs.html">About Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">2.</a><a class="nav-link2" href="contactus.html">Contact Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">3.</a><a class="nav-link2" href="checkout.html">CheckOut</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">4.</a><a class="nav-link2" href="mainproduct1.html">Product Detail</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">5.</a><a class="nav-link2" href="accordian.html">Accordian</a></li>
+                        </ul>
+                    </li>
+                    <p>
+                        <a class="nav-link1 responsive-bttn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                            Pages
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+                            <ul>
+                                <li class="nav-link3"><a href="#" class="nav-link6">1.</a><a class="nav-link4" href="AboutUs.html">About Us</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">2.</a><a class="nav-link4" href="contactus.html">Contact Us</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">3.</a><a class="nav-link4" href="checkout.html">CheckOut</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">4.</a><a class="nav-link4" href="mainproduct1.html">Product Detail</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">5.</a><a class="nav-link4" href="accordian.html">Accordian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link1" href="sale.html">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ani ms-auto login-text">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-bottom: 10px;">Login / Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link1 cart-icon" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content background-1">
+      
+        
+          <div class="modal-body">
+              <div class="text-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="signupForm" action="" onsubmit="return validateForm()">
+              <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input class="logininput" type="email" id="email" required>
+              <label class="loginlabel" for="email">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input class="logininput" type="password" id="password" required minlength="8">
+              <label class="loginlabel" for="password">Password</label>
+            </div>
+                 <div class="remember-forgot">
+                  <label class="loginlabel"><input type="checkbox"> Remember</label>
+                  <a href="#" class="logina">Forgot Password?</a>
+                </div>
+                <button type="submit" class="button1">Login</button>
+                <div class="register-link">
+                   <p style="color: black;" class="loginp">Don' have an account? <a class="logina" href="#" data-bs-toggle="modal" data-bs-target="#signup">Register</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content  background-1">
+            
+            <div class="modal-body">
+            <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="signupForm" action="" onsubmit="return validateForm()">
+            <div class="input-box">
+              <input class="logininput" type="text" id="fullName" required>
+              <label class="loginlabel" for="fullName">Full Name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input class="logininput" type="email" id="email" required>
+              <label class="loginlabel" for="email">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="call"></ion-icon></span>
+              <input class="logininput" type="tel" id="phoneNumber" required pattern="^03[0-9]{9}">
+              <label class="loginlabel" for="phoneNumber">Phone Number</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input class="logininput" type="password" id="password" required minlength="8">
+              <label class="loginlabel" for="password">Password</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input class="logininput" type="password" id="confirmPassword" required minlength="8" oninput="checkPasswordMatch()">
+              <label class="loginlabel" for="confirmPassword">Confirm Password</label>
+              <p id="passwordMatchMessage"></p> 
+              <!-- Display message for password match status -->
+            </div>
+            <button type="submit" class="button1">Sign up</button>
+            <div class="register-link">
+              <p style="color: black;" class="loginp">Already have an account? <a class="logina" href="#" data-bs-toggle="modal" data-bs-target="#signup">Sign in</a></p>
+            </div>
+          </form>          
+            </div>
+          </div>
+        </div>
+      </div> >
+  
+       <!-- start main slider -->
+       <div class="main_slider_area" style="margin-top: 89px;">
+        <div class="main_slider" id="slider_rev">
+            
+            <div class="fullwidthbanner-container" >
+                <div class="fullwidth_home_banner">
+                    <ul>
+                        
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                            <img src="img/rev-slider/slider-twenty.jpg" alt="slide" >
+                            <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
+                                style="font-family: 'Playfair Display', serif; font-size: 48px;color: #fff; margin-left: 503px; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                               Shop
+                            </div>
+                            <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
+                                style="font-family: 'Playfair Display', serif; font-size: 48px;color: #fff; margin-left: 433px; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                               Accordian
+                            </div>
+                        </li>
+  
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                            <img src="img/rev-slider/slider-twenty.jpg" alt="slide" >
+                            <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
+                                style="font-family: 'Playfair Display', serif; font-size: 48px;color: #fff; margin-left: 503px; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                Shop
+                            </div>
+                            <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
+                                style="font-family: 'Playfair Display', serif; font-size: 48px;color: #fff; margin-left: 433px; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                Accordian
+                            </div> 
+                        </li>							                           
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main slider -->
+
+    <div class="accordion-container">
+        <h1 style="color: #333;">Frequently Asked Questions</h1>
+        <div class="accordion" >
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What is your return policy?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We offer a 30-day return policy. You can return any item within 30 days of purchase for a full refund.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Do you offer international shipping?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes, we ship internationally. Shipping costs will be calculated at checkout based on your location.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>How can I track my order?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Once your order has shipped, you will receive an email with tracking information. You can use this information to track your order online.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What sizes do you offer?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We offer a wide range of sizes from US 5 to US 15. You can find the size guide on each product page to help you choose the right fit.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Are your shoes true to size?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Our shoes are designed to be true to size. We recommend referring to our size guide and customer reviews for more detailed information.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>How do I clean and maintain my shoes?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>To clean your shoes, use a damp cloth to wipe away dirt and stains. Avoid using harsh chemicals. For leather shoes, use a leather conditioner to maintain the material.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Do you offer warranties on your shoes?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes, we offer a one-year warranty on all our shoes. If you experience any issues with your shoes, please contact our customer service for assistance.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Can I return or exchange my shoes?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We accept returns and exchanges within 30 days of purchase. Shoes must be in their original condition and packaging. Please visit our returns page for more information.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Do you offer custom or personalized shoes?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Currently, we do not offer custom or personalized shoes. However, we are constantly updating our collections with new designs and styles.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Where are your shoes manufactured?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Our shoes are manufactured in various locations around the world, including the USA, Italy, and China. We ensure that all our manufacturing partners adhere to high ethical and quality standards.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Do you have physical stores?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes, we have several physical stores across the country. You can find the nearest store using our store locator on the website.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What payment methods do you accept?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We accept all major credit cards, PayPal, and Apple Pay.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer section start -->
+          <!--------------------- Footer Start ------------------->
+
+          <footer>
+            <div class="footer">
+                <footer class="py-5" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+                    <div class="row">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="margin-left: 30px; color: #fff;">Section</h4>
+                            <ul class="footer flex-column">
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color" >New Feature</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color" >Men</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color" >Women</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color" >Kids</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color" >Elders</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="margin-left: 30px; color: #fff">Pages</h4>
+                            <ul class="footer flex-column">
+                                <li class="footer-item mb-2"><a href="index.html" class="footer-link p-0 --bs-body-color">Home</a></li>
+                                <li class="footer-item mb-2"><a href="AboutUs.html" class="footer-link p-0 --bs-body-color">About Us</a></li>
+                                <li class="footer-item mb-2"><a href="contactus.html" class="footer-link p-0 --bs-body-color">Contact Us</a></li>
+                                <li class="footer-item mb-2"><a href="sale.html" class="footer-link p-0 --bs-body-color">Shop</a></li>
+                                <li class="footer-item mb-2"><a href="checkout.html" class="footer-link p-0 --bs-body-color">CheckOut</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-2 mb-3">
+                            <h4 style="margin-left: 30px; color: #fff">Pages</h4>
+                            <ul class="footer flex-column">
+                                <li class="footer-item mb-2"><a href="mainproduct1.html" class="footer-link p-0 --bs-body-color">Shoes Detail</a></li>
+                                <li class="footer-item mb-2"><a href="#" class="footer-link p-0 --bs-body-color" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a></li>
+                                <li class="footer-item mb-2"><a href="#" class="footer-link p-0 --bs-body-color" data-bs-toggle="modal" data-bs-target="#signup">Signup</a></li>
+                                <li class="footer-item mb-2"><a href="accordian.html" class="footer-link p-0 --bs-body-color">Accordian</a></li>
+                                <li class="footer-item mb-2"><a href="cart.html" class="footer-link p-0 --bs-body-color">View Cart</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col col-md-4 offset-md-1">
+                            <form action="https://formspree.io/f/xldrnwwg" method="POST">
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <input style="border-radius: 5px;" id="newsletter1" type="text" class="email" name="email" placeholder="Email address">
+                                    <button class="btn" type="submit" style="border: 1px solid #fff; background-color: black; color: #fff;">Subscribe</button>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i
+                                                    class="fa-brands fa-x-twitter fs-4" style="color: #fff;"></i></a></li>
+                                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i
+                                                    class="fa-brands fa-instagram fs-4" style="color: #fff;"></i></a></li>
+                                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i
+                                                    class="fa-brands fa-facebook fs-4" style="color: #fff;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        
+                   
+                </footer>
+            </div>
+        </footer>
+        <!-- Footer section end -->
+
+        
+
+        
+    <script src="accordian.js"></script>
+    
+     <!-- slider links -->
+<!-- jquery library -->
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<!-- rev slider -->
+<script src="js/rev-slider/rs-plugin/jquery.themepunch.plugins.min.js"></script>
+<script src="js/rev-slider/rs-plugin/jquery.themepunch.revolution.js"></script>
+<script src="js/rev-slider/rs.home.js"></script>
+<!-- uikit -->
+<script src="js/uikit.min.js"></script>
+<!-- owlcarousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- lightslider -->
+<script src="js/lightslider.js"></script> 
+<!-- wow Animation -->
+<script src="js/wow.min.js"></script>
+<!--[if !IE]><!-->
+<script type="text/javascript">new WOW().init();</script>
+<script src="assets/js/loader.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+<script src="common.js"></script>
+    
+</body>
+</html>

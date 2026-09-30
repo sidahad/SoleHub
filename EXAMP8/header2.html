@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Cart Icon</title>
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="style1.css">
+
+		
+<!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Karla:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+
+                     <!-- footer -->
+<script src="https://kit.fontawesome.com/c28f852b63.js" crossorigin="anonymous"></script>
+
+    <style>
+        .cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.cart-icon i {
+    font-size: 1.5rem;
+}
+
+.cart-icon .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    .navbar-nav.ms-auto {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-icon {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
+    }
+
+    .navbar-nav ani {
+        display: none;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" data-aos="slide-right" data-aos-delay="1000">
+                <img src="img/logo4.png" alt="" class="logo">
+                <h3 style="color: #fff; margin-left: 3px; margin-top: 3px; font-size: 2.17rem;">SoleHub</h3>
+            </a>
+            <button class="navbar-toggler" style="background-color:#fff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" data-aos="slide-up" data-aos-delay="1000" id="navbarNav">
+                <ul class="navbar-nav ani">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown2 dropdown">
+                        <a class="nav-link1 responsive-bttn1 dropdown-toggle" href="#">
+                            Pages
+                        </a>
+                        <ul class="ani dropdown1">
+                            <li class="nav-link3"><a href="#" class="nav-link5">1.</a><a class="nav-link2" href="AboutUs.html">About Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">2.</a><a class="nav-link2" href="contactus.html">Contact Us</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">3.</a><a class="nav-link2" href="checkout.html">CheckOut</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">4.</a><a class="nav-link2" href="mainproduct1.html">Product Detail</a></li>
+                            <li class="nav-link3"><a href="#" class="nav-link5">5.</a><a class="nav-link2" href="accordian.html">Accordian</a></li>
+                        </ul>
+                    </li>
+                    <p>
+                        <a class="nav-link1 responsive-bttn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                            Pages
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body" style="background:linear-gradient(to right, #00093c, #2d0b00);">
+                            <ul>
+                                <li class="nav-link3"><a href="#" class="nav-link6">1.</a><a class="nav-link4" href="AboutUs.html">About Us</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">2.</a><a class="nav-link4" href="contactus.html">Contact Us</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">3.</a><a class="nav-link4" href="checkout.html">CheckOut</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">4.</a><a class="nav-link4" href="mainproduct1.html">Product Detail</a></li>
+                                <li class="nav-link3"><a href="#" class="nav-link6">5.</a><a class="nav-link4" href="accordian.html">Accordian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link1" href="sale.html">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ani ms-auto login-text">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-bottom: 10px;">Login / Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link1 cart-icon" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content background-1">
+
+	
+		<div class="modal-body">
+			  <div class="text-end">
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<form id="signupForm" action="" onsubmit="return validateForm()">
+			  <div class="input-box">
+				<span class="icon"><ion-icon name="mail"></ion-icon></span>
+				<input class="logininput" type="email" id="email" required>
+				<label class="loginlabel" for="email">Email</label>
+			</div>
+			<div class="input-box">
+			  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+			  <input class="logininput" type="password" id="password" required minlength="8">
+			  <label class="loginlabel" for="password">Password</label>
+		  </div>
+					 <div class="remember-forgot">
+						<label class="loginlabel"><input type="checkbox"> Remember</label>
+						<a href="#" class="logina">Forgot Password?</a>
+					</div>
+					<button type="submit" class="button1">Login</button>
+					<div class="register-link">
+					   <p style="color: black;" class="loginp">Don' have an account? <a class="logina" href="#" data-bs-toggle="modal" data-bs-target="#signup">Register</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content  background-1">
+		  
+		  <div class="modal-body">
+			<div class="text-end">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <form id="signupForm" action="" onsubmit="return validateForm()">
+			<div class="input-box">
+				<input class="logininput" type="text" id="fullName" required>
+				<label class="loginlabel" for="fullName">Full Name</label>
+			</div>
+			<div class="input-box">
+				<span class="icon"><ion-icon name="mail"></ion-icon></span>
+				<input class="logininput" type="email" id="email" required>
+				<label class="loginlabel" for="email">Email</label>
+			</div>
+			<div class="input-box">
+				<span class="icon"><ion-icon name="call"></ion-icon></span>
+				<input class="logininput" type="tel" id="phoneNumber" required pattern="^03[0-9]{9}">
+				<label class="loginlabel" for="phoneNumber">Phone Number</label>
+			</div>
+			<div class="input-box">
+			  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+			  <input class="logininput" type="password" id="password" required minlength="8">
+			  <label class="loginlabel" for="password">Password</label>
+		  </div>
+		  <div class="input-box">
+			  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+			  <input class="logininput" type="password" id="confirmPassword" required minlength="8" oninput="checkPasswordMatch()">
+			  <label class="loginlabel" for="confirmPassword">Confirm Password</label>
+			  <p id="passwordMatchMessage"></p> 
+			  <!-- Display message for password match status -->
+		  </div>
+			<button type="submit" class="button1">Sign up</button>
+			<div class="register-link">
+				<p style="color: black;" class="loginp">Already have an account? <a class="logina" href="#" data-bs-toggle="modal" data-bs-target="#signup">Sign in</a></p>
+			</div>
+		</form>          
+		  </div>
+	  </div>
+  </div>
+</div>
+
+ <!-- jquery library -->
+ <script src="js/vendor/jquery-1.11.2.min.js"></script>
+ <!-- rev slider -->
+ <script src="js/rev-slider/rs-plugin/jquery.themepunch.plugins.min.js"></script>
+ <script src="js/rev-slider/rs-plugin/jquery.themepunch.revolution.js"></script>
+ <script src="js/rev-slider/rs.home.js"></script>
+ <!-- uikit -->
+ <script src="js/uikit.min.js"></script>
+ <!-- easing -->
+ <script src="js/jquery.easing.1.3.min.js"></script>
+ <script src="js/datepicker.js"></script>
+ <!-- scroll up -->
+ <script src="js/jquery.scrollUp.min.js"></script>
+ <!-- owlcarousel -->
+ <script src="js/owl.carousel.min.js"></script>
+ <!-- lightslider -->
+ <script src="js/lightslider.js"></script>     
+ <!-- wow Animation -->
+ <script src="js/wow.min.js"></script>
+ <!--[if !IE]><!-->
+ <script type="text/javascript">new WOW().init();</script>
+ <!--<![endif]-->>
+ <!-- my js -->
+ <script src="js/main.js"></script>
+
+<!-- @@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@ -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!--@@@@@@@@@@@@@ loader JS @@@@@@@@@@@@@-->
+<script src="./assets/js/loader.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+
+</body>
+</html>

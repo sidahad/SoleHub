@@ -1,0 +1,114 @@
+/* ========================================================
+   SoleHub - Universal Responsive Stylesheet
+   Ensures seamless responsiveness across all screen sizes
+======================================================== */
+
+/* Mobile & Tablet Container Adjustments */
+@media screen and (max-width: 991px) {
+    .container, .container-fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Prevent overflow on small screens */
+    body, html {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Navbar fixes on mobile */
+    .navbar-custom {
+        padding: 10px 15px !important;
+    }
+
+    .navbar-collapse {
+        background: linear-gradient(135deg, #00093c, #2d0b00);
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-link1 {
+        padding: 10px 5px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.2rem !important;
+    }
+
+    .cart-icon {
+        display: inline-flex !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Hero & Slider fixes */
+    .main_slider_area {
+        margin-top: 70px !important;
+    }
+
+    .tp-caption {
+        white-space: normal !important;
+        text-align: center !important;
+    }
+}
+
+/* Small Smartphone Layout (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .logo {
+        width: 100px !important;
+    }
+
+    h1, .h1 { font-size: 1.75rem !important; }
+    h2, .h2 { font-size: 1.5rem !important; }
+    h3, .h3 { font-size: 1.25rem !important; }
+
+    /* Product card adjustments */
+    .card {
+        margin-bottom: 15px !important;
+    }
+
+    /* Modal adjustments */
+    .modal-dialog {
+        margin: 10px auto !important;
+        max-width: 95% !important;
+    }
+
+    .login-box {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Wide Mobile & Phablet (481px - 767px) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .shoecart_thumb.small_shoecart_thumb > a {
+        display: block;
+    }
+    .shoecart_thumb.small_shoecart_thumb img {
+        height: auto;
+        width: 100%;
+    }
+    .select_shoecart .select_shoecart_content .shoecart_thumb {
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .login-text {
+        margin-top: 10px;
+    }
+}

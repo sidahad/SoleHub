@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "d5e5",
+      "name": "Ahad",
+      "email": "aptech2211F1@gmail.com",
+      "phone": "02526182517",
+      "message": "the first message\n"
+    },
+    {
+      "id": "31a6",
+      "name": "gb",
+      "email": "aptech2211F1@gmail.com",
+      "phone": "67",
+      "age": "43"
+    },
+    {
+      "id": "fe34",
+      "name": "abdul rafay",
+      "email": "aptech2211F1@gmail.com",
+      "phone": "54",
+      "age": "222222"
+    },
+    {
+      "id": "28f8",
+      "name": "Abdul Ahad",
+      "email": "",
+      "phone": "03260577907",
+      "message": "this displayed in my backend through json"
+    }
+  ]
+}

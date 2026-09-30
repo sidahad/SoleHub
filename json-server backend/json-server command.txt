@@ -1,0 +1,11 @@
+npm install-g json-server
+
+npx json-server --watch students.json
+
+
+.then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                window.location.href = 'fetch.html';
+                alert("Student Added");
+            })

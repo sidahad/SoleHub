@@ -1,0 +1,51 @@
+/* --------------------------------------------------------
+                    Start Mobile Layout: 320px
+-----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 767px) {
+.container {
+    width:300px;
+}
+}
+/* --------------------------------------------------------
+                    End Mobile Layout: 320px
+-----------------------------------------------------------*/
+
+
+/* --------------------------------------------------------
+                    Start Wide Mobile Layout: 480px
+-----------------------------------------------------------*/
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {
+    width:450px;
+}
+
+
+/* ----------------------------------------
+                start home page
+--------------------------------------------*/
+
+body#home_one .special_offer_main {
+  top: -56.5%;
+  left: 70%;
+}
+.shoecart_thumb.small_shoecart_thumb > a {
+  display: block;
+}
+body#home_two .shoecart_thumb.small_shoecart_thumb img, body#accomodation_page .shoecart_thumb.small_shoecart_thumb img {
+  height: auto;
+  width: 100%;
+}
+body#home_two .select_shoecart .select_shoecart_content .shoecart_thumb {
+  margin-bottom: 40px;
+}
+body#home_one .welcome .single_shoecart_wrapper, body#accomodation_page .accomodation_single_shoecart .single_shoecart_wrapper {
+  text-align: center;
+}
+
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+        }
+        form, form textarea, form button{
+            padding: 20px;
+            margin-bottom: 20px;
+            outline: none;
+            border: none;
+            background-color: #ddd;
+        }
+        form button{
+            background-color: #333;
+            cursor: pointer;
+            color: #fff;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ContactUs</h1>
+    <form action="https://formspree.io/f/xldrnwwg" method="POST">
+        <input class="name" name="name" type="text" placeholder="name">
+        <input class="email" name="email" type="email" placeholder="email">
+        <textarea class="msg" name="msg" cols="5" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+   
+    
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+		function sendMsg(e){
+		e.PreventDefult();
+		const form = document.querySelector('.colorlib-for');
+		 name = document.querySelector('.name');
+         email = document.querySelector('.email');
+         msg = document.querySelector('.msg');
+		
+		
+	    Email.send({
+         SecureToken : "9e74762e-9b0d-4fdb-b316-d8e3581228c9",
+         To : 'ahadkind324@gmail.com',
+         From : "email.value",
+         Subject : "Checkout",
+         Body : "msg.value"
+        }).then(
+         message => alert(message)
+        );
+		}
+
+		 form.addEventListener('Submit', sendMsg);
+		</script>
+</body>
+</html>
